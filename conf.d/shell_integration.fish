@@ -1,4 +1,6 @@
-set --global _shell_integration_log false
+if not set -q --global _shell_integration_log
+    set --global _shell_integration_log false
+end
 
 # Attach event handlers
 functions --query \
